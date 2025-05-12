@@ -1,4 +1,19 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {}
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "workbench.menuBar.visibility": "visible",
+        "workbench.activityBar.visible": true
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next",
+        "github.copilot"
+        // Add other extension IDs here
+      ]
+    }
+  }
 }

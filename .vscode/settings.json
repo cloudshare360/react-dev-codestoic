@@ -1,0 +1,10 @@
+{
+    "workbench.statusBar.visible": true,
+    "workbench.menuBar.visibility": "visible",
+    "editor.formatOnSave": true,
+    "editor.fontSize": 16,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
