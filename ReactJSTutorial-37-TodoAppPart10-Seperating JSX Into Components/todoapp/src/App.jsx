@@ -1,13 +1,19 @@
 import "./App.css";
-import Header from "./components/Header";
-import TodoForm from "./components/TodoForm";
+import Todo from "./components/Todo";
+import Header from "./components/Header"
 
 function App() {
   return (
     <div>
       <Header />
       <br />
-      <TodoForm />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Todo />
     </div>
   );
 }
