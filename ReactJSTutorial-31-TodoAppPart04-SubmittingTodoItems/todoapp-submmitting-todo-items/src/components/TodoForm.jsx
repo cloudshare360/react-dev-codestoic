@@ -1,4 +1,5 @@
 import { useState } from "react";
+import TodoItem from "./TodoItem";
 
 export default function TodoForm() {
   const divStyleWithBorder = {
@@ -31,11 +32,30 @@ export default function TodoForm() {
           <button type="submit">Add </button>
         </form>
       </div>
-      <div style={divStyleWithBorder}>Todo Text Value is </div>
-      {todos.map((todo, index) => (
-        <div key={index}>{todo}</div>
-      ))}
-      {console.log(todos)}
+      <div style={divStyleWithBorder}>
+        <div>
+          <h2>
+            <u>Todos list values are :-</u>
+          </h2>
+        </div>
+        <div>
+          {todos.map((todo, index) => (
+            <h3 key={index}> {todo}</h3>
+          ))}
+          {console.log(todos)}
+        </div>
+        <div>
+          <h2>
+            <u>using todo component:</u>
+          </h2>
+        </div>
+        <div>
+          {todos.map((item, index) => (
+            <TodoItem item={item} key={index} />
+          ))}
+          {console.log(todos)}
+        </div>
+      </div>
     </div>
   );
 }
