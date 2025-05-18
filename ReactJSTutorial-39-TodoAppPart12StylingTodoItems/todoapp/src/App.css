@@ -4,14 +4,3 @@
   padding: 2rem;
   text-align: center;
 }
-
-
-.list {
-  background-color: aqua;
-}
-
-.divStyleWithBorder {
-  border: 2px solid black;
-  padding: 10px;
-  margin: 10px 0;
-}

@@ -1,4 +1,4 @@
-import styles from "./TodoItem.modules.css?inline";
+import styles from "./TodoItem.module.css";
 export default function TodoItem({ item, index }) {
   return (
     <div className={styles.item}>
