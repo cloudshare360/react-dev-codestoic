@@ -7,11 +7,17 @@ export default function TodoList({ todos, setTodos }) {
       <div>
         <h1>
           <u>List of todos</u>
-        </h1>{" "}
+        </h1>
       </div>
       <div className={styles.list}>
-        {todos.map((item, index) => (
-          <TodoItem item={item} key={index} todos={todos} setTodos={setTodos} />
+        {
+        todos.map((item, index) => (
+          <TodoItem
+            key={index}
+            item={item}
+            todos={todos}
+            setTodos={setTodos}
+          />
         ))}
         {console.log(todos)}
       </div>
