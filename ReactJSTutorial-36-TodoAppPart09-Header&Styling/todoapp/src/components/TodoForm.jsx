@@ -39,12 +39,6 @@ export default function TodoForm() {
           </h2>
         </div>
         <div>
-          {todos.map((todo, index) => (
-            <h3 key={index}> {todo}</h3>
-          ))}
-          {console.log(todos)}
-        </div>
-        <div>
           <h2>
             <u>using todo component:</u>
           </h2>

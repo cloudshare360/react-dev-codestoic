@@ -12,15 +12,11 @@ https://www.youtube.com/watch?v=CR0gehgQC-w&list=PLSsAz5wf2lkKm0BG9wUWWSgYWBzDa-
       Step 3: Select a variant: JavaScript  
       Step 4: Change to the react folder and execute the command 
       ```npm install & npm run dev```
-
 ```
-
 cd reactpro  &. 
-npm install & npm run dev. 
-
+npm install & npm run dev
 ```
 ### add vite.config.js
-
 ```
 server: {
     allowedHosts: true

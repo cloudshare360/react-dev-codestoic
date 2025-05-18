@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import TodoForm from './components/TodoForm'
-import Header from './components/Header'
+import "./App.css";
+import Header from "./components/Header";
+import TodoForm from "./components/TodoForm";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
+      <br />
       <TodoForm />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
