@@ -4,7 +4,7 @@ import TodoList from "./TodoList";
 
 export default function Todo() {
   const [todos, setTodos] = useState([
-    { name: "play", id: 1, done: false },
+    { name: "play", id: 1, done: true },
     { name: "lunch", id: 2, done: false },
     { name: "homework", id: 3, done: false }
   ]

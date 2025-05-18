@@ -33,7 +33,7 @@ export default function Form({ todos, setTodos }) {
             setTodo({
               name: e.target.value,
               id: todos.length + 1,
-              done: false,
+              done: false
             });
           }}
           type="text"
@@ -56,6 +56,7 @@ export default function Form({ todos, setTodos }) {
             </li>
           ))}
         </ul>
+        <p>id: {todo.id} name: {todo.name} Done: {todo.done}</p>
       </div>
     </form>
   );
