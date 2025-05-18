@@ -1,3 +1,10 @@
+import styles from "./todoitem.modules.css?inline";
 export default function TodoItem({ item, index }) {
-  return <h3 key={index}> {item}</h3>;
+  return (
+    <div className={styles.item}>
+      <div className={styles.itemName} key={index}>
+        {item}
+      </div>
+    </div>
+  );
 }
