@@ -11,7 +11,7 @@ export default function TodoItem({ item, index, todos, setTodos }) {
   return (
     <div className={styles.item}>
       <div className={styles.itemName} key={index}>
-        {item.name}
+        {item}
         <span>
           <button onClick={()=>handleDelete(item)} className={styles.deleteButton}>x</button>
         </span>
