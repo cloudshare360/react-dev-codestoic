@@ -6,12 +6,9 @@ function App() {
 
   return (
     <div className="App">
-    <div>ReactJS Tutorial 41: Todo App Part 14 Delete Functionality In React</div>
+    <div><h1>ReactJS Tutorial 43: Marking Todo Items As Complete</h1></div>
       <Header />
-            <br />
-            <br />
-            <br />
-            <br />
+            
             <br />
             <br />
             <br />

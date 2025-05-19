@@ -17,11 +17,17 @@
 
 .deleteButton {
     float: right;
-    padding: 12px 20px;
+    padding: 18px 30px;
     border: none;
     background-color: #f7ca18;
     color: white;
     margin-top: -5px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.completed {
+
+    text-decoration: line-through;
+
 }

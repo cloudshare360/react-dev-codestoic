@@ -7,10 +7,19 @@ export default function TodoItem({ item, index, todos, setTodos }) {
     console.log("Updated todos:", todos);
   }
 
+  function handleClick(itemName)
+  {
+    console.log("Item click:", itemName);
+    setTodos(todos.map((todo)=> todo.name === itemName ? {...todo, done: !todo.done}: todo));
+    console.log("todos", todos);
+  }
+
+  const className = item.done?  styles.completed : ""
+
   return (
     <div className={styles.item}>
       <div className={styles.itemName} key={index}>
-        id:  {item.id} ; name: {item.name}; isDone: {item.done}
+       <span  className={className} onClick={()=> handleClick(item.name) }> id: {item.id} ; name: {item.name}; isDone: {(item.done) ? "true": "false"}</span>
         <span>
           <button
             onClick={() => handleDelete(item)}
@@ -22,6 +31,8 @@ export default function TodoItem({ item, index, todos, setTodos }) {
       </div>
 
       <hr className={styles.line} />
+     
+      
     </div>
   );
 }
